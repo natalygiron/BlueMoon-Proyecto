@@ -13,7 +13,7 @@ public class Conexion {
         
     public static Connection getConexion(){
             
-            String connectionUrl ="jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=BLUEMOONFINAL;user=sa;password=123456;";
+            String connectionUrl ="jdbc:sqlserver://localhost:1433;databaseName=BLUEMOONFINAL;user=sa;password=123456;";
             //jdbc:sqlserver://localhost\SQLEXPRESS:1433;databaseName=BLUEMOONFINAL;
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");//conecta con el driver
@@ -26,7 +26,7 @@ public class Conexion {
             
             try {
                 contacto = DriverManager.getConnection(connectionUrl);
-                JOptionPane.showMessageDialog(null, "Conexión establecida");
+                JOptionPane.showMessageDialog(null, "Conexión establecida GAaaaaa.");
             } catch (SQLException e) {
                 JOptionPane.showMessageDialog(null, "Error "+e.getMessage(),
                         "Error de conexion", JOptionPane.ERROR_MESSAGE);
